@@ -1,0 +1,11 @@
+import tkinter as tk
+import tkinter.filedialog as fd
+
+filez = fd.askopenfilenames(
+    title='Choose a Python file',
+    filetypes=(('Python files', '*.py'), )
+)
+
+
+for f in filez:
+    print(f)
